@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { translations } from './i18n';
 import logo from './assets/Logo.png';
+import prototip from './assets/Prototip.jpeg';
 
 function App() {
   const [lang, setLang] = useState('en');
@@ -110,10 +111,7 @@ function App() {
             </ul>
           </div>
           <div className="product-placeholder">
-            {/* Minimal aesthetic placeholder instead of complex image generation */}
-            <div className="mockup-hub">
-              <div className="mockup-bike">Movio Bike & Geo-Hub Prototype</div>
-            </div>
+            <img src={prototip} alt="Prototip Movio Hub" style={{ width: '100%', borderRadius: '16px', border: '1px solid var(--movio-gray)', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} />
           </div>
         </div>
       </section>

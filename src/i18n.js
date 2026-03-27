@@ -36,14 +36,14 @@ export const translations = {
     },
     validation: {
       title: "Proof that the demand is real",
-      description: "Movio is not based only on assumptions. The concept was validated through 121 survey responses, with strong utility scores and 52 students already joining the pilot waitlist.",
+      description: "Movio is not based only on assumptions. The concept was validated through 128 survey responses, with strong utility scores and 42 students already joining the pilot waitlist.",
       cards: [
-        { number: "121", label: "Total student responses" },
-        { number: "80.2%", label: "Rated the idea 4/5 or 5/5" },
-        { number: "86.0%", label: "Would use it if a hub was nearby" },
-        { number: "52", label: "Waitlist emails collected" }
+        { number: "128", label: "Total student responses" },
+        { number: "79.7%", label: "Rated the idea 4/5 or 5/5" },
+        { number: "85.9%", label: "Would use it if a hub was nearby" },
+        { number: "42", label: "Waitlist emails collected" }
       ],
-      details: "Participants included 84 UTCN students, 26 UBB students, and 6 USAMV students. 49.6% stated they would use it weekly or daily."
+      details: "Participants included 90 UTCN students, 26 UBB students, and 6 USAMV students. 25.8% stated they would use it weekly or daily."
     },
     product: {
       title: "The Product",
@@ -79,7 +79,7 @@ export const translations = {
     roadmap: {
       title: "Rollout Roadmap",
       year1: "Year 1",
-      year1Text: "First pilot in university-supported locations, around 47 bicycles (initial fleet budget 80k RON).",
+      year1Text: "First pilot in university-supported locations, around 32-40 bicycles (initial fleet budget 80k RON).",
       year2: "Year 2",
       year2Text: "Expansion with 35 more bicycles into connected areas.",
       year3: "Year 3",
@@ -138,14 +138,14 @@ export const translations = {
     },
     validation: {
       title: "Dovada că cererea este reală",
-      description: "Movio nu este un concept bazat doar pe presupuneri. Ideea a fost validată prin 121 de răspunsuri la sondaj, obținând scoruri excelente și 52 de persoane pe waitlist.",
+      description: "Movio nu este un concept bazat doar pe presupuneri. Ideea a fost validată prin 128 de răspunsuri la sondaj, obținând scoruri excelente și 42 de persoane pe waitlist.",
       cards: [
-        { number: "121", label: "Răspunsuri de la studenți" },
-        { number: "80.2%", label: "Au evaluat ideea cu 4/5 sau 5/5" },
-        { number: "86.0%", label: "Ar folosi sistemul dacă ar fi o stație aproape" },
-        { number: "52", label: "Au lăsat email-ul pentru waitlist" }
+        { number: "128", label: "Răspunsuri de la studenți" },
+        { number: "79.7%", label: "Au evaluat ideea cu 4/5 sau 5/5" },
+        { number: "85.9%", label: "Ar folosi sistemul dacă ar fi o stație aproape" },
+        { number: "42", label: "Au lăsat email-ul pentru waitlist" }
       ],
-      details: "Participanții au inclus 84 studenți UTCN, 26 studenți UBB și 6 studenți USAMV. 49.6% susțin că vor folosi sistemul zilnic sau săptămânal."
+      details: "Participanții au inclus 90 studenți UTCN, 26 studenți UBB și 6 studenți USAMV. 25.8% susțin că vor folosi sistemul zilnic sau săptămânal."
     },
     product: {
       title: "Produsul & Conceptul tehnic",
@@ -181,7 +181,7 @@ export const translations = {
     roadmap: {
       title: "Timeline & Lansare",
       year1: "Anul 1",
-      year1Text: "Pilot în zone universitare (UTCN etc.), aproximativ 47 biciclete (buget inițial 80.000 RON).",
+      year1Text: "Pilot în zone universitare (UTCN etc.), aproximativ 32-40 biciclete (buget inițial 80.000 RON).",
       year2: "Anul 2",
       year2Text: "Extindere graduală cu încă 35 de biciclete pe coridoare studențești.",
       year3: "Anul 3",
