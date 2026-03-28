@@ -99,7 +99,7 @@ export const translations = {
   ro: {
     nav: {
       theProblem: "Problema",
-      howItWorks: "Flow",
+      howItWorks: "Cum funcționează",
       validation: "Validare",
       product: "Produs",
       businessModel: "Model",
@@ -109,11 +109,11 @@ export const translations = {
     },
     hero: {
       tag: "Mobilitate Inteligentă de Campus",
-      line1: "Deblocă-ți",
-      line2: "drumul studenților.",
-      headline: "Deblocă-ți drumul studenților.",
-      subheadline: "Movio face ca deplasările scurte ale studenților să fie mai ieftine, mai simple și mai accesibile — stații fixe, lacăt inteligent și o aplicație web gândită pentru uz zilnic.",
-      btnConcept: "Vezi conceptul",
+      line1: "Pedalează liber",
+      line2: "prin campusul tău.",
+      headline: "Pedalează liber prin campusul tău.",
+      subheadline: "Movio face deplasările scurte ale studenților mai ieftine, mai simple și mai accesibile — stații fixe, biciclete cu lacăt inteligent și o aplicație web gândită pentru viața de zi cu zi.",
+      btnConcept: "Descoperă conceptul",
       btnValidation: "Vezi validarea",
       btnPilot: "Explorează pilotul"
     },
@@ -126,64 +126,64 @@ export const translations = {
     },
     problem: {
       title: "Problema actuală",
-      description: "Călătoriile scurte în Cluj sunt adesea prea scumpe, incomode sau prost deservite de opțiunile curente.",
+      description: "Deplasările scurte în Cluj sunt adesea prea scumpe, incomode sau slab acoperite de opțiunile existente.",
       list: [
-        "Sistemele publice de biciclete sunt adesea rigide, slab utilizate și incomode.",
-        "Trotinetele electrice sunt utile, dar devin scumpe pentru drumuri repetate.",
-        "Studenții au nevoie de o soluție fiabilă între cămine, campusuri și puncte de interes urban.",
-        "Opțiunile curente nu acoperă nevoile: ieftin, rapid, accesibil și simplu de deblocat."
+        "Sistemele publice de biciclete sunt rigide, subutilizate și greu de folosit în mod regulat.",
+        "Trotinetele electrice sunt utile, dar costurile se acumulează rapid pentru drumuri repetate zilnic.",
+        "Studenții au nevoie de o soluție de mobilitate fiabilă între cămine, facultăți și puncte cheie din oraș.",
+        "Nicio opțiune actuală nu combină prețul mic, accesul rapid, proximitatea și simplicitatea deblocării."
       ]
     },
     howItWorks: {
       title: "Cum funcționează Movio",
-      step1: "Deschide Web App-ul",
+      step1: "Deschide aplicația web",
       step2: "Găsește cea mai apropiată stație",
-      step3: "Deblochează bicicleta și mergi"
+      step3: "Deblochează bicicleta și pornești la drum"
     },
     validation: {
-      title: "Dovada că cererea este reală",
-      description: "Movio nu este un concept bazat doar pe presupuneri. Ideea a fost validată prin 128 de răspunsuri la sondaj, cu scoruri excelente și 42 de persoane deja pe waitlist.",
+      title: "Dovada că cererea există cu adevărat",
+      description: "Movio nu e construit pe presupuneri. Conceptul a fost validat prin 128 de răspunsuri la sondaj, cu scoruri foarte bune de utilitate și 42 de studenți înscriși deja pe lista de așteptare.",
       cards: [
-        { number: "128", label: "Răspunsuri de la studenți" },
-        { number: "79.7%", label: "Au evaluat ideea cu 4/5 sau 5/5" },
-        { number: "85.9%", label: "Ar folosi sistemul dacă ar fi o stație aproape" },
-        { number: "42", label: "Au lăsat email-ul pentru waitlist" }
+        { number: "128", label: "Răspunsuri totale de la studenți" },
+        { number: "79.7%", label: "Au notat ideea cu 4 sau 5 din 5" },
+        { number: "85.9%", label: "Ar folosi sistemul dacă ar exista o stație în apropiere" },
+        { number: "42", label: "S-au înscris pe lista de așteptare" }
       ],
-      details: "Participanții au inclus 90 studenți UTCN, 26 studenți UBB și 6 studenți USAMV. 25.8% susțin că vor folosi sistemul zilnic sau săptămânal."
+      details: "Participanții au inclus 90 de studenți UTCN, 26 de studenți UBB și 6 studenți USAMV. 25,8% declară că ar folosi sistemul zilnic sau săptămânal."
     },
     product: {
-      title: "Produsul & Conceptul tehnic",
-      description: "Un sistem de bike-sharing gândit perfect pentru comportamentul și infrastructura studențească.",
+      title: "Produsul & Tehnologia",
+      description: "Un sistem de bike-sharing conceput în jurul comportamentului real al studenților și al infrastructurii universitare.",
       features: [
-        { title: "Biciclete standardizate", text: "Construcție robustă și ergonomică, asamblate intern în atelierele UTCN." },
-        { title: "Lacăt IoT inteligent", text: "Asigură securitatea și accesul rapid prin web app." },
-        { title: "Stații geofenced", text: "Ordine urbană, control total al flotei — fără abandon haotic." },
-        { title: "Aplicație Web (PWA)", text: "Acces imediat din browser, fără instalare — funcționează pe orice dispozitiv." }
+        { title: "Biciclete standardizate de oraș", text: "Construcție robustă și ergonomică, asamblate în atelierele proprii UTCN (TCM)." },
+        { title: "Lacăt IoT inteligent", text: "Securitate garantată și acces rapid prin aplicația web, direct de pe telefon." },
+        { title: "Stații cu geofencing", text: "Flux urban ordonat, control total al flotei — fără abandonarea bicicletelor la întâmplare." },
+        { title: "Aplicație Web (PWA)", text: "Acces instant din browser, fără descărcare sau instalare — funcționează pe orice dispozitiv." }
       ]
     },
     businessModel: {
       title: "Model de Business",
-      description: "Abonamente accesibile pentru studenți combinate cu extinderea prin sponsorizări — preț minim, traseu sigur de scalare.",
+      description: "Abonamente accesibile pentru studenți, combinate cu extindere finanțată prin sponsorizări — costuri minime, creștere sustenabilă.",
       b2c: {
-        title: "B2C: Focus pe Student",
-        text: "Abonament anual estimat la 29.99 RON, primele 60 de minute/zi gratuite, apoi 5 RON/oră. Cel mai ieftin mod de a te deplasa în Cluj."
+        title: "B2C: Focusat pe Student",
+        text: "Abonament anual estimat la ~29,99 RON, cu primele 60 de minute pe zi gratuite, apoi 5 RON/oră. Cel mai accesibil mod de deplasare din Cluj."
       },
       b2b: {
-        title: "B2B: Scale & Sponsorship",
-        text: "Stații și biciclete sponsorizate de companii. Branding vizibil lângă campusurile de inginerie UTCN — avantaj pentru companii, studenți și oraș."
+        title: "B2B: Scalare & Parteneriate",
+        text: "Stații și biciclete cu branding corporativ, finanțate de companii interesate de vizibilitate în campusurile de inginerie UTCN — avantaj mutual pentru companii, studenți și comunitate."
       }
     },
     roadmap: {
-      title: "Timeline & Lansare",
+      title: "Etape de Lansare",
       year1: "Anul 1",
-      year1Text: "Pilot în zone universitare (UTCN). Aprox. 32–40 biciclete, buget inițial: 80.000 RON. Asamblate intern în atelierele TCM.",
+      year1Text: "Pilot în zone universitare (UTCN Cluj-Napoca). Flotă inițială: 32–40 de biciclete, buget estimat: 80.000 RON. Producție și asamblare în atelierele TCM.",
       year2: "Anul 2",
-      year2Text: "Extindere graduală cu încă 35 de biciclete pe coridoare studențești, susținute de sponsori B2B.",
+      year2Text: "Extindere graduală cu încă 35 de biciclete pe coridoarele studențești principale, susținute de parteneriate B2B.",
       year3: "Anul 3",
-      year3Text: "Lărgirea suprafeței de acoperire cu +35 biciclete spre spații urbane din Cluj-Napoca."
+      year3Text: "Lărgirea zonei de acoperire cu încă 35 de biciclete, incluzând zone urbane adiacente campusului din Cluj-Napoca."
     },
     cta: {
-      quote: "Movio s-a născut pentru a fi meciul perfect pentru stilul de viață al studentului — un mod de a te mișca prin lume care e al tău.",
+      quote: "Movio a fost gândit să fie alegerea perfectă pentru stilul de viață al studentului — o modalitate de a te mișca prin lume care îți aparține cu adevărat.",
       btn: "Hai să începem"
     },
     footer: {
