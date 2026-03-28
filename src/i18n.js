@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     nav: {
-      theProblem: "The Problem",
+      theProblem: "Problem",
       howItWorks: "How it Works",
       validation: "Validation",
       product: "Product",
@@ -11,28 +11,37 @@ export const translations = {
       languageToggle: "RO"
     },
     hero: {
-      headline: "Campus bike-sharing built for Cluj students",
-      subheadline: "Movio makes short student trips cheaper, simpler, and easier to access through fixed hubs, smart locks, and a web-based flow designed for daily use.",
+      tag: "Smart Campus Mobility",
+      line1: "Unleash your",
+      line2: "campus ride.",
+      headline: "Unleash your campus ride.",
+      subheadline: "Movio makes short student trips cheaper, simpler, and easier to access — fixed hubs, smart locks, and a web app designed for daily life.",
       btnConcept: "See the concept",
       btnValidation: "View validation",
       btnPilot: "Explore the pilot"
     },
+    pricing: {
+      planName: "Student Plan",
+      onlyLabel: "only",
+      price: "~29.99 RON/yr",
+      freeMinutes: "60 free min/day",
+      access247: "24/7 Access"
+    },
     problem: {
       title: "The Problem",
-      description: "Short trips in Cluj are often either too expensive, too inconvenient, or poorly served by current options.",
+      description: "Short trips in Cluj are often too expensive, too inconvenient, or poorly served by current options.",
       list: [
         "Public bike systems are seen as rigid, underused, or inconvenient.",
         "Electric scooters are useful, but become expensive for repeated short trips.",
         "Students need an option for daily movement between dorms, campuses, and city points.",
-        "Existing solutions don't fully match the student routine: low-cost, fast, nearby, simple to unlock."
+        "Existing solutions don't match student routine: low-cost, fast, nearby, simple to unlock."
       ]
     },
     howItWorks: {
       title: "How Movio Works",
       step1: "Open the web app",
       step2: "Find the nearest hub",
-      step3: "Unlock a bike",
-      step4: "Ride and return it to a designated zone"
+      step3: "Unlock a bike & ride"
     },
     validation: {
       title: "Proof that the demand is real",
@@ -49,54 +58,40 @@ export const translations = {
       title: "The Product",
       description: "A bike-sharing system designed around student behavior and infrastructure.",
       features: [
-        { title: "Standardized city bikes", text: "Robust and simple construction." },
-        { title: "Smart-lock IoT module", text: "Ensures security and seamless access." },
-        { title: "Geofenced hubs", text: "Organized flow without city clutter." },
-        { title: "Web-based app", text: "Quick access without app store friction." }
+        { title: "Standardized city bikes", text: "Robust and simple construction, maintained in-house at UTCN workshops." },
+        { title: "Smart-lock IoT module", text: "Ensures security and seamless access via the web app." },
+        { title: "Geofenced hubs", text: "Organized flow without city clutter. No free-floating chaos." },
+        { title: "Web-based app (PWA)", text: "Quick access without app store friction. Works on any device." }
       ]
     },
     businessModel: {
       title: "Business Model",
-      description: "The model combines low-cost student subscriptions with sponsorship-based expansion, allowing the service to stay accessible while creating a realistic path to scale.",
+      description: "Low-cost student subscriptions combined with sponsorship-based expansion — accessible pricing, realistic path to scale.",
       b2c: {
         title: "B2C: Student Focus",
-        text: "Annual subscription of ~29.99 RON/year, including 60 free minutes per day. Overage fee is 5 RON/hour."
+        text: "Annual subscription of ~29.99 RON/year, including 60 free minutes per day. Overage fee is 5 RON/hour. Designed to be cheaper than any alternative."
       },
       b2b: {
         title: "B2B: Scale & Sponsorship",
-        text: "Sponsored bikes and branded hubs. Visible corporate employer branding near engineering campuses."
+        text: "Sponsored bikes and branded hubs. Visible corporate employer branding near UTCN engineering campuses — a win for companies, students, and the city."
       }
-    },
-    whyStandOut: {
-      title: "Why Movio stands out",
-      points: [
-        "Built specifically for students",
-        "Campus-first rollout",
-        "Backed by direct survey validation",
-        "Designed as both a mobility product and a scalable partnership model"
-      ]
     },
     roadmap: {
       title: "Rollout Roadmap",
       year1: "Year 1",
-      year1Text: "First pilot in university-supported locations, around 32-40 bicycles (initial fleet budget 80k RON).",
+      year1Text: "First pilot in university-supported locations, around 32–40 bicycles. Initial fleet budget: 80,000 RON. Assembled in-house at UTCN TCM workshops.",
       year2: "Year 2",
-      year2Text: "Expansion with 35 more bicycles into connected areas.",
+      year2Text: "Expansion with 35 more bicycles into connected campus corridors, driven by B2B sponsorships.",
       year3: "Year 3",
-      year3Text: "Expansion with 35 more bicycles and broader student coverage."
+      year3Text: "Expansion with 35 more bicycles and broader student coverage across Cluj-Napoca."
     },
-    challenges: {
-      title: "Challenges & Responses",
-      cards: [
-        { label: "Topography", text: "Controlled pilot areas, phased rollout, and operational redistribution." },
-        { label: "Station imbalance", text: "Relocation logic and user incentives to rebalance bikes." },
-        { label: "Damage or theft", text: "Smart-lock hardware, controlled pilot rollout, and clearly managed hub zones." },
-        { label: "Adoption", text: "Low price, web-based access, and hub placement near real student routes." }
-      ]
+    cta: {
+      quote: "Movio is built to be the perfect match for the student lifestyle — it's a way of moving through the world that's yours.",
+      btn: "Get Started"
     },
     footer: {
       team: "Team Movio",
-      university: "Engineering Students @ UTCN Cluj-Napoca",
+      university: "Engineering Students @ UTCN Cluj-Napoca (TCM)",
       competition: "JA BizzFactory / GEN-E 2026",
       contactBtn: "Contact Us"
     }
@@ -113,11 +108,21 @@ export const translations = {
       languageToggle: "EN"
     },
     hero: {
-      headline: "Bike-sharing de campus pentru studenții din Cluj",
-      subheadline: "Movio face ca deplasările scurte ale studenților să fie mai ieftine, mai simple și mai accesibile prin stații fixe, biciclete cu lacăt inteligent și o aplicație web proiectată pentru uz zilnic.",
+      tag: "Mobilitate Inteligentă de Campus",
+      line1: "Deblocă-ți",
+      line2: "drumul studenților.",
+      headline: "Deblocă-ți drumul studenților.",
+      subheadline: "Movio face ca deplasările scurte ale studenților să fie mai ieftine, mai simple și mai accesibile — stații fixe, lacăt inteligent și o aplicație web gândită pentru uz zilnic.",
       btnConcept: "Vezi conceptul",
       btnValidation: "Vezi validarea",
       btnPilot: "Explorează pilotul"
+    },
+    pricing: {
+      planName: "Plan Studenți",
+      onlyLabel: "doar",
+      price: "~29.99 RON/an",
+      freeMinutes: "60 min gratuite/zi",
+      access247: "Acces 24/7"
     },
     problem: {
       title: "Problema actuală",
@@ -130,15 +135,14 @@ export const translations = {
       ]
     },
     howItWorks: {
-      title: "Cum funcționează",
+      title: "Cum funcționează Movio",
       step1: "Deschide Web App-ul",
       step2: "Găsește cea mai apropiată stație",
-      step3: "Deblochează o bicicletă",
-      step4: "Mergi și returnează-o în zonă dedicată"
+      step3: "Deblochează bicicleta și mergi"
     },
     validation: {
       title: "Dovada că cererea este reală",
-      description: "Movio nu este un concept bazat doar pe presupuneri. Ideea a fost validată prin 128 de răspunsuri la sondaj, obținând scoruri excelente și 42 de persoane pe waitlist.",
+      description: "Movio nu este un concept bazat doar pe presupuneri. Ideea a fost validată prin 128 de răspunsuri la sondaj, cu scoruri excelente și 42 de persoane deja pe waitlist.",
       cards: [
         { number: "128", label: "Răspunsuri de la studenți" },
         { number: "79.7%", label: "Au evaluat ideea cu 4/5 sau 5/5" },
@@ -151,54 +155,40 @@ export const translations = {
       title: "Produsul & Conceptul tehnic",
       description: "Un sistem de bike-sharing gândit perfect pentru comportamentul și infrastructura studențească.",
       features: [
-        { title: "Biciclete standardizate", text: "Construcție robustă și ergonomică." },
-        { title: "Lacăt IoT inteligent", text: "Asigură securitatea și accesibilitatea sistemului." },
-        { title: "Stații geofenced", text: "Ordine urbană, control total al flotei și eliminarea abandonului aiurea." },
-        { title: "Aplicație Web (PWA)", text: "Acces imediat direct din browser, fără bătăi de cap cu instalarea." }
+        { title: "Biciclete standardizate", text: "Construcție robustă și ergonomică, asamblate intern în atelierele UTCN." },
+        { title: "Lacăt IoT inteligent", text: "Asigură securitatea și accesul rapid prin web app." },
+        { title: "Stații geofenced", text: "Ordine urbană, control total al flotei — fără abandon haotic." },
+        { title: "Aplicație Web (PWA)", text: "Acces imediat din browser, fără instalare — funcționează pe orice dispozitiv." }
       ]
     },
     businessModel: {
       title: "Model de Business",
-      description: "Modelul hibrid îmbină abonamente accesibile pentru studenți cu extinderea susținută de companii sponsor, păstrând costurile mici și creând un traseu sigur de scalare.",
+      description: "Abonamente accesibile pentru studenți combinate cu extinderea prin sponsorizări — preț minim, traseu sigur de scalare.",
       b2c: {
         title: "B2C: Focus pe Student",
-        text: "Abonament anual estimat la 29.99 RON, primele 60 de minute/zi gratuite, apoi 5 RON/oră."
+        text: "Abonament anual estimat la 29.99 RON, primele 60 de minute/zi gratuite, apoi 5 RON/oră. Cel mai ieftin mod de a te deplasa în Cluj."
       },
       b2b: {
         title: "B2B: Scale & Sponsorship",
-        text: "Stații și biciclete sponsorizate de companii interesate de zona și vizibilitatea din campusurile de inginerie."
+        text: "Stații și biciclete sponsorizate de companii. Branding vizibil lângă campusurile de inginerie UTCN — avantaj pentru companii, studenți și oraș."
       }
-    },
-    whyStandOut: {
-      title: "Prin ce se remarcă Movio",
-      points: [
-        "Dezvoltat specific pentru studenți și nevoile lor reale",
-        "Lansare controlată, prioritar în ecosistemul de campus",
-        "Susținut de date de validare extrase direct de la target",
-        "Un mix concret între mobilitate reală și parteneriate B2B"
-      ]
     },
     roadmap: {
       title: "Timeline & Lansare",
       year1: "Anul 1",
-      year1Text: "Pilot în zone universitare (UTCN etc.), aproximativ 32-40 biciclete (buget inițial 80.000 RON).",
+      year1Text: "Pilot în zone universitare (UTCN). Aprox. 32–40 biciclete, buget inițial: 80.000 RON. Asamblate intern în atelierele TCM.",
       year2: "Anul 2",
-      year2Text: "Extindere graduală cu încă 35 de biciclete pe coridoare studențești.",
+      year2Text: "Extindere graduală cu încă 35 de biciclete pe coridoare studențești, susținute de sponsori B2B.",
       year3: "Anul 3",
-      year3Text: "Lărgirea suprafeței de acoperire cu +35 biciclete spre spații urbane."
+      year3Text: "Lărgirea suprafeței de acoperire cu +35 biciclete spre spații urbane din Cluj-Napoca."
     },
-    challenges: {
-      title: "Riscuri & Răspunsuri",
-      cards: [
-        { label: "Topografie (Clujul e în deal)", text: "Lansare pilot asumată, spații gândite tactic, și redistribuire operațională." },
-        { label: "Dezechilibru între stații", text: "Funcții de relocare și stimulente pentru repoziționarea bicicletelor de către useri." },
-        { label: "Furt & Vandalism", text: "Lacăt hardware smart, traseu de pilot monitorizat fizic, stații clar reglementate." },
-        { label: "Adopție", text: "Web-app super simplu, preț minim, parcaje aproape de cămine și facultate." }
-      ]
+    cta: {
+      quote: "Movio s-a născut pentru a fi meciul perfect pentru stilul de viață al studentului — un mod de a te mișca prin lume care e al tău.",
+      btn: "Hai să începem"
     },
     footer: {
       team: "Echipa Movio",
-      university: "Studenți @ UTCN Cluj-Napoca (TCM)",
+      university: "Studenți Inginerie @ UTCN Cluj-Napoca (TCM)",
       competition: "JA BizzFactory / GEN-E 2026",
       contactBtn: "Contactează-ne"
     }

@@ -1,22 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { translations } from './i18n';
 import logo from './assets/Logo.png';
 import prototip from './assets/Prototip.jpeg';
+import heroBike from './assets/hero_bike.png';
+import heroWheel from './assets/hero_wheel.png';
+
+/* ── Reusable hook: reveal element when in viewport ── */
+function useReveal() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) el.classList.add('active'); },
+      { threshold: 0.12 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return ref;
+}
+
+/* ── Reveal wrapper ── */
+function Reveal({ children, delay = 0, className = '' }) {
+  const ref = useReveal();
+  return (
+    <div ref={ref} className={`reveal ${className}`} style={{ '--delay': `${delay}ms` }}>
+      {children}
+    </div>
+  );
+}
 
 function App() {
   const [lang, setLang] = useState('en');
   const t = translations[lang];
-
-  const toggleLanguage = () => {
-    setLang(lang === 'en' ? 'ro' : 'en');
-  };
+  const toggleLanguage = () => setLang(lang === 'en' ? 'ro' : 'en');
 
   return (
     <div className="app-container">
-      {/* Navbar */}
+
+      {/* ── NAVBAR ── */}
       <nav className="navbar">
-        <div className="container nav-container">
+        <div className="nav-container">
           <a href="#" className="logo">
             <img src={logo} alt="Movio Logo" />
           </a>
@@ -27,146 +53,215 @@ function App() {
             <li><a href="#product">{t.nav.product}</a></li>
             <li><a href="#roadmap">{t.nav.roadmap}</a></li>
           </ul>
-          <button className="btn btn-secondary lang-toggle" onClick={toggleLanguage}>
+          <button className="btn btn-lang" onClick={toggleLanguage} id="lang-toggle">
             {t.nav.languageToggle}
           </button>
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <header className="hero">
-        <div className="container hero-content">
-          <h1>{t.hero.headline}</h1>
-          <p className="subheadline">{t.hero.subheadline}</p>
-          <div className="hero-buttons">
-            <a href="#product" className="btn btn-primary">{t.hero.btnConcept}</a>
-            <a href="#validation" className="btn btn-secondary">{t.hero.btnValidation}</a>
+      {/* ── HERO ── */}
+      <header className="hero" id="hero">
+        <div className="hero-wheel-bg">
+          <img src={heroWheel} alt="" aria-hidden="true" className="hero-wheel-img" loading="lazy" />
+        </div>
+        <div className="hero-bike-col">
+          <img src={heroBike} alt="Movio bike" className="hero-bike-img" loading="lazy" />
+        </div>
+        <div className="hero-text-col">
+          <div className="hero-tag reveal-fast">{t.hero.tag}</div>
+          <h1 className="hero-headline">{t.hero.line1}<br /><span className="headline-teal">{t.hero.line2}</span></h1>
+          <p className="hero-sub">{t.hero.subheadline}</p>
+          <div className="hero-actions">
+            <a href="#product" className="btn btn-primary" id="hero-concept-btn">{t.hero.btnConcept}</a>
+            <a href="#validation" className="btn btn-outline" id="hero-validation-btn">{t.hero.btnValidation}</a>
           </div>
         </div>
       </header>
 
-      {/* The Problem */}
-      <section id="problem" className="problem-section bg-card">
+      {/* ── HOW IT WORKS (top dark band) ── */}
+      <section id="how-it-works" className="how-section">
         <div className="container">
-          <h2 className="section-title text-accent">{t.problem.title}</h2>
-          <p className="section-desc">{t.problem.description}</p>
-          <div className="grid grid-2">
-            {t.problem.list.map((item, index) => (
-              <div key={index} className="problem-item">
-                <span className="bullet"></span>
-                <p>{item}</p>
-              </div>
+          <Reveal><h2 className="section-title text-teal">{t.howItWorks.title}</h2></Reveal>
+          <div className="steps-row">
+            {['step1','step2','step3'].map((s, i) => (
+              <Reveal key={s} delay={i * 100}>
+                <div className="step-pill" id={`step-${i+1}`}>
+                  <div className="step-icon">
+                    <span className="step-num">{i + 1}</span>
+                    <span className="step-icon-glyph">{['📱','📍','🚲'][i]}</span>
+                  </div>
+                  <p className="step-label">{t.howItWorks[s]}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section id="how-it-works" className="how-it-works">
+      {/* ── SLANTED PRICING BANNER ── */}
+      <div className="slant-wrap">
+        <div className="slant-band">
+          <div className="slant-items">
+            <div className="slant-item">
+              <span className="slant-big">{t.pricing.planName}</span>
+            </div>
+            <div className="slant-divider" />
+            <div className="slant-item">
+              <span className="slant-label">{t.pricing.onlyLabel}</span>
+              <span className="slant-price">{t.pricing.price}</span>
+            </div>
+            <div className="slant-divider" />
+            <div className="slant-item">
+              <span className="slant-big">{t.pricing.freeMinutes}</span>
+            </div>
+            <div className="slant-divider" />
+            <div className="slant-item">
+              <span className="slant-big">{t.pricing.access247}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ── THE PROBLEM ── */}
+      <section id="problem" className="problem-section">
         <div className="container">
-          <h2 className="section-title text-teal">{t.howItWorks.title}</h2>
-          <div className="grid grid-4 step-cards">
-            {['step1', 'step2', 'step3', 'step4'].map((step, index) => (
-              <div key={index} className="step-card bg-card">
-                <div className="step-number">{index + 1}</div>
-                <h3>{t.howItWorks[step]}</h3>
-              </div>
+          <Reveal><h2 className="section-title text-accent">{t.problem.title}</h2></Reveal>
+          <Reveal delay={80}><p className="section-desc">{t.problem.description}</p></Reveal>
+          <div className="problem-grid">
+            {t.problem.list.map((item, i) => (
+              <Reveal key={i} delay={i * 90}>
+                <div className="problem-card" id={`problem-card-${i}`}>
+                  <span className="problem-num accent-num">0{i+1}</span>
+                  <p>{item}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Validation */}
+      {/* ── VALIDATION ── */}
       <section id="validation" className="validation-section">
         <div className="container">
-          <h2 className="section-title text-accent">{t.validation.title}</h2>
-          <p className="section-desc">{t.validation.description}</p>
-          
-          <div className="grid grid-4 stat-cards">
-            {t.validation.cards.map((card, index) => (
-              <div key={index} className="stat-card bg-card">
-                <h3 className="stat-num text-teal">{card.number}</h3>
-                <p className="stat-label text-gray">{card.label}</p>
-              </div>
+          <Reveal><h2 className="section-title text-accent">{t.validation.title}</h2></Reveal>
+          <Reveal delay={80}><p className="section-desc">{t.validation.description}</p></Reveal>
+          <div className="stats-grid">
+            {t.validation.cards.map((card, i) => (
+              <Reveal key={i} delay={i * 80}>
+                <div className="stat-card" id={`stat-card-${i}`}>
+                  <div className="stat-num text-teal">{card.number}</div>
+                  <div className="stat-label">{card.label}</div>
+                </div>
+              </Reveal>
             ))}
           </div>
-          <p className="stat-details text-gray" style={{marginTop: '2rem', textAlign: 'center'}}>
-            {t.validation.details}
-          </p>
+          <Reveal delay={320}>
+            <p className="stat-details">{t.validation.details}</p>
+          </Reveal>
         </div>
       </section>
 
-      {/* Product */}
-      <section id="product" className="product-section bg-card">
-        <div className="container grid grid-2" style={{ alignItems: 'center' }}>
-          <div>
-            <h2 className="section-title text-teal" style={{ textAlign: 'left' }}>{t.product.title}</h2>
-            <p className="section-desc" style={{ marginBottom: '2rem' }}>{t.product.description}</p>
+      {/* ── PRODUCT ── */}
+      <section id="product" className="product-section">
+        <div className="container product-grid">
+          <div className="product-text">
+            <Reveal><h2 className="section-title text-teal" style={{textAlign:'left'}}>{t.product.title}</h2></Reveal>
+            <Reveal delay={80}><p className="section-desc" style={{textAlign:'left', margin:'0 0 2rem'}}>{t.product.description}</p></Reveal>
             <ul className="feature-list">
-              {t.product.features.map((feature, index) => (
-                <li key={index}>
-                  <strong>{feature.title}:</strong> {feature.text}
-                </li>
+              {t.product.features.map((f, i) => (
+                <Reveal key={i} delay={i * 80}>
+                  <li id={`feature-${i}`}>
+                    <span className="feature-dot" />
+                    <div>
+                      <strong>{f.title}</strong>
+                      <span>{f.text}</span>
+                    </div>
+                  </li>
+                </Reveal>
               ))}
             </ul>
           </div>
-          <div className="product-placeholder">
-            <img src={prototip} alt="Prototip Movio Hub" style={{ width: '100%', borderRadius: '16px', border: '1px solid var(--movio-gray)', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} />
-          </div>
+          <Reveal delay={100} className="product-img-col">
+            <img src={prototip} alt="Prototip Movio Hub" className="product-img" loading="lazy" />
+          </Reveal>
         </div>
       </section>
 
-      {/* Business Model */}
+      {/* ── BUSINESS MODEL ── */}
       <section id="business" className="business-section">
-        <div className="container text-center">
-          <h2 className="section-title">{t.businessModel.title}</h2>
-          <p className="section-desc">{t.businessModel.description}</p>
-          <div className="grid grid-2 mt-4">
-             <div className="bz-card bg-card">
-               <h3 className="text-teal">{t.businessModel.b2c.title}</h3>
-               <p>{t.businessModel.b2c.text}</p>
-             </div>
-             <div className="bz-card bg-card">
-               <h3 className="text-accent">{t.businessModel.b2b.title}</h3>
-               <p>{t.businessModel.b2b.text}</p>
-             </div>
+        <div className="container">
+          <Reveal><h2 className="section-title">{t.businessModel.title}</h2></Reveal>
+          <Reveal delay={80}><p className="section-desc">{t.businessModel.description}</p></Reveal>
+          <div className="biz-grid">
+            <Reveal delay={100}>
+              <div className="biz-card biz-b2c" id="biz-b2c">
+                <div className="biz-badge teal-badge">B2C</div>
+                <h3 className="text-teal">{t.businessModel.b2c.title}</h3>
+                <p>{t.businessModel.b2c.text}</p>
+              </div>
+            </Reveal>
+            <Reveal delay={180}>
+              <div className="biz-card biz-b2b" id="biz-b2b">
+                <div className="biz-badge accent-badge">B2B</div>
+                <h3 className="text-accent">{t.businessModel.b2b.title}</h3>
+                <p>{t.businessModel.b2b.text}</p>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
 
-      {/* Roadmap */}
-      <section id="roadmap" className="roadmap-section bg-card">
+      {/* ── ROADMAP ── */}
+      <section id="roadmap" className="roadmap-section">
         <div className="container">
-          <h2 className="section-title text-accent">{t.roadmap.title}</h2>
+          <Reveal><h2 className="section-title text-accent">{t.roadmap.title}</h2></Reveal>
           <div className="timeline">
-            {[1, 2, 3].map(year => (
-              <div key={year} className="timeline-item">
-                <div className="timeline-year text-teal">{t.roadmap[`year${year}`]}</div>
-                <div className="timeline-content">
-                  <p>{t.roadmap[`year${year}Text`]}</p>
+            {[1,2,3].map((y, i) => (
+              <Reveal key={y} delay={i * 100}>
+                <div className="tl-item" id={`tl-year-${y}`}>
+                  <div className="tl-year text-teal">{t.roadmap[`year${y}`]}</div>
+                  <div className="tl-dot" />
+                  <div className="tl-content">
+                    <p>{t.roadmap[`year${y}Text`]}</p>
+                  </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* ── FINAL CTA (bej section, like mockup bottom) ── */}
+      <section className="cta-section">
+        <div className="cta-inner">
+          <blockquote className="cta-quote">{t.cta.quote}</blockquote>
+          <a href="#hero" className="btn btn-cta" id="cta-main-btn">{t.cta.btn} →</a>
+        </div>
+      </section>
+
+      {/* ── FOOTER ── */}
       <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-             <div>
-               <img src={logo} alt="Movio Logo" className="footer-logo" />
-               <p className="text-gray">{t.footer.competition}</p>
-             </div>
-             <div className="footer-info">
-               <strong>{t.footer.team}</strong>
-               <p className="text-gray">{t.footer.university}</p>
-               <br/>
-               <button className="btn btn-secondary">{t.footer.contactBtn}</button>
-             </div>
+        <div className="container footer-grid">
+          <div>
+            <img src={logo} alt="Movio Logo" className="footer-logo" />
+            <p className="text-gray">{t.footer.competition}</p>
+          </div>
+          <div className="footer-mid">
+            <ul className="footer-links">
+              <li><a href="#problem">{t.nav.theProblem}</a></li>
+              <li><a href="#how-it-works">{t.nav.howItWorks}</a></li>
+              <li><a href="#validation">{t.nav.validation}</a></li>
+              <li><a href="#product">{t.nav.product}</a></li>
+              <li><a href="#roadmap">{t.nav.roadmap}</a></li>
+            </ul>
+          </div>
+          <div className="footer-right">
+            <strong>{t.footer.team}</strong>
+            <p className="text-gray">{t.footer.university}</p>
           </div>
         </div>
+        <div className="footer-line" />
+        <p className="footer-copy text-gray">© 2026 Movio · JA BizzFactory / GEN-E</p>
       </footer>
     </div>
   );
