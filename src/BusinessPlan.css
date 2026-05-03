@@ -1,0 +1,145 @@
+.bp-page {
+  background-color: #0D1117;
+  color: #F4F1EC;
+  min-height: 100vh;
+  padding-top: 100px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.bp-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.bp-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(32px, 5vw, 64px);
+  color: #F4F1EC;
+  margin-bottom: 16px;
+}
+
+.bp-subtitle {
+  color: #7A8A9A;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+.bp-section {
+  background-color: #161B22;
+  border: 1px solid rgba(0, 180, 180, 0.15);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.bp-section:hover {
+  border-color: rgba(0, 180, 180, 0.4);
+  transform: translateY(-2px);
+}
+
+.bp-section-title {
+  font-family: 'Syne', sans-serif;
+  color: #00B4B4;
+  font-size: 28px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.bp-card {
+  background: rgba(13, 17, 23, 0.6);
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 4px solid #F4A827;
+}
+
+.bp-card-teal {
+  border-left-color: #00B4B4;
+}
+
+.bp-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #F4F1EC;
+}
+
+.bp-card p {
+  color: #7A8A9A;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.bp-stat {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00B4B4;
+  margin-bottom: 8px;
+  font-family: 'Syne', sans-serif;
+}
+
+.bp-table-wrapper {
+  overflow-x: auto;
+  margin-top: 24px;
+}
+
+.bp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bp-table th, .bp-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(122, 138, 154, 0.2);
+}
+
+.bp-table th {
+  color: #00B4B4;
+  font-weight: 600;
+}
+
+.bp-table td {
+  color: #F4F1EC;
+}
+
+.bp-nav-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #7A8A9A;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 40px;
+  transition: color 0.2s;
+}
+
+.bp-nav-back:hover {
+  color: #00B4B4;
+}
+
+.bp-accent-text {
+  color: #F4A827;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .bp-section {
+    padding: 24px;
+  }
+}
