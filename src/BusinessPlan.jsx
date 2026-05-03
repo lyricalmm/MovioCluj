@@ -152,7 +152,7 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <p style={{color:'#7A8A9A', fontSize:'14px', marginTop:'16px'}}>Toți 4 sunt studenți la <strong style={{color:'#F4F1EC'}}>Manufacturing Engineering, UTCN</strong>. Acces la laboratoare, imprimante 3D, software CAD licențiat. Mentor JA România prin BizzFactory 2025–2026. Locul 2 Innovation Day RAF.</p>
+          <p style={{ color: '#7A8A9A', fontSize: '14px', marginTop: '16px' }}>Toți 4 sunt studenți la <strong style={{ color: '#F4F1EC' }}>Manufacturing Engineering, UTCN</strong>. Acces la laboratoare, imprimante 3D, software CAD licențiat. Mentor JA România prin BizzFactory 2025–2026. Locul 2 Innovation Day RAF.</p>
           <p className="bp-section-subtitle">Lacune Identificate & Plan de Acoperire</p>
           <div className="bp-grid-3">
             <div className="bp-card"><h3>Lipsă experiență comercială</h3><p>→ Mentorat JA, cursuri HP LIFE gratuite, învățare pe teren prin pilot</p></div>
@@ -207,7 +207,7 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <p style={{color:'#7A8A9A', fontSize:'13px', marginTop:'12px'}}>La ~841.500 RON (~168.300 EUR) în Anul 3, firma depășește plafonul de 100.000 EUR pentru regimul micro și trece automat la <strong style={{color:'#F4F1EC'}}>impozit pe profit de 16%</strong>. Normal și sănătos pentru o companie în creștere.</p>
+          <p style={{ color: '#7A8A9A', fontSize: '13px', marginTop: '12px' }}>La ~841.500 RON (~168.300 EUR) în Anul 3, firma depășește plafonul de 100.000 EUR pentru regimul micro și trece automat la <strong style={{ color: '#F4F1EC' }}>impozit pe profit de 16%</strong>. Normal și sănătos pentru o companie în creștere.</p>
         </section>
 
         {/* SWOT */}
@@ -289,21 +289,73 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <p className="bp-section-subtitle">Surse de Finanțare CAPEX</p>
+          <p className="bp-section-subtitle">Modelul de Finanțare: Angel Investor</p>
+          <div className="bp-card bp-card-teal" style={{ marginBottom: '20px', padding: '20px' }}>
+            <h3 style={{ fontSize: '16px', marginBottom: '8px' }}>De ce exclusiv Angel Investor?</h3>
+            <p style={{ fontSize: '14px', color: '#B0BEC5' }}>
+              Granturile, premiile și crowdfunding-ul implică birocrație, termene incerte și condiții restrictive incompatibile cu viteza de lansare.
+              Fondatorii nu dispun de capital personal suficient și nu vor să se împrumute.
+              <strong style={{ color: '#F4F1EC' }}> Movio merge înainte DOAR dacă un angel investor crede în produs și echipă.</strong>{' '}
+              Această claritate elimină ambiguitatea și permite o decizie rapidă.
+            </p>
+          </div>
+
+          <p className="bp-section-subtitle">Structura Deal-ului</p>
+          <div className="bp-grid-3" style={{ marginBottom: '20px' }}>
+            <div className="bp-stat-card"><div className="bp-stat amber">21.700€</div><div className="bp-stat-label">Investiție totală solicitată</div></div>
+            <div className="bp-stat-card"><div className="bp-stat">20%</div><div className="bp-stat-label">Equity oferit investitorului</div></div>
+            <div className="bp-stat-card"><div className="bp-stat">4.6×</div><div className="bp-stat-label">ROI estimat la exit An 3</div></div>
+          </div>
+
           <div className="bp-table-wrapper">
             <table className="bp-table">
-              <thead><tr><th>Sursă</th><th>Sumă estimată</th><th>Probabilitate</th><th>Termen</th></tr></thead>
+              <thead><tr><th>Element</th><th>Valoare</th><th>Detalii</th></tr></thead>
               <tbody>
-                <tr><td>Self-funding cofondatori (4 × 1.000 EUR)</td><td>4.000 EUR</td><td><span className="positive">Sigur</span></td><td>Imediat</td></tr>
-                <tr><td>Premiu JA BizzFactory (semifinala / naționala)</td><td>1.000–3.000 EUR</td><td>Mediu</td><td>Iunie 2026</td></tr>
-                <tr><td>Program Fix Cluj (finanțare nerambursabilă tineri)</td><td>3.000–5.000 EUR</td><td>Mediu</td><td>Iulie–Aug 2026</td></tr>
-                <tr><td>Sponsorizare în natură UTCN (acces lab, spațiu)</td><td>echivalent 2.000 EUR</td><td><span className="positive">Înalt (LOI)</span></td><td>Imediat</td></tr>
-                <tr><td>Granturi Innovation Day RAF / alte concursuri</td><td>500–2.000 EUR</td><td>Scăzut-mediu</td><td>Variabil</td></tr>
-                <tr><td>Crowdfunding local (post-validare)</td><td>3.000–5.000 EUR</td><td>Scăzut</td><td>Toamna 2026</td></tr>
-                <tr><td>Împrumut personal cofondatori (rezervă)</td><td>până la 5.000 EUR</td><td><span className="positive">Sigur la nevoie</span></td><td>Imediat</td></tr>
+                <tr><td><strong>Pre-money valuation</strong></td><td className="positive">434.000 RON (~86.800 EUR)</td><td>4× investiție — realist pentru pre-revenue cu validare 130 respondenți + prototip funcțional</td></tr>
+                <tr><td><strong>Investiție angel</strong></td><td className="positive">108.480 RON (21.696 EUR)</td><td>Acoperă 100% CAPEX + OPEX 6 luni</td></tr>
+                <tr><td><strong>Post-money valuation</strong></td><td>542.480 RON (~108.496 EUR)</td><td>Pre-money + investiție</td></tr>
+                <tr><td><strong>Equity angel investor</strong></td><td className="positive"><strong>20%</strong></td><td>108.480 / 542.480 = 20,0% exact</td></tr>
+                <tr><td><strong>Equity fondatori (4 × 20%)</strong></td><td className="positive">80%</td><td>Fiecare fondator păstrează 20% din companie</td></tr>
               </tbody>
             </table>
           </div>
+
+          <p className="bp-section-subtitle">Tabel de Capă (Cap Table)</p>
+          <div className="bp-table-wrapper">
+            <table className="bp-table">
+              <thead><tr><th>Acționar</th><th>Equity %</th><th>Valoare la post-money</th><th>Rol</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Angel Investor</strong></td><td><span className="amber-text"><strong>20%</strong></span></td><td className="positive">108.496 EUR</td><td>Finanțator, board observer seat</td></tr>
+                <tr><td>Fondator 1 (CEO)</td><td>20%</td><td>21.699 EUR</td><td>Strategie, relații B2B</td></tr>
+                <tr><td>Fondator 2 (CTO Hardware)</td><td>20%</td><td>21.699 EUR</td><td>Hub-uri, electronică, producție</td></tr>
+                <tr><td>Fondator 3 (CTO Software)</td><td>20%</td><td>21.699 EUR</td><td>Aplicație PWA, backend</td></tr>
+                <tr><td>Fondator 4 (CMO)</td><td>20%</td><td>21.699 EUR</td><td>Marketing, relații cu studenții</td></tr>
+                <tr className="total-row"><td><strong>TOTAL</strong></td><td><strong>100%</strong></td><td><strong>542.480 RON (~108.496 EUR)</strong></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="bp-section-subtitle">Returnul Estimat pentru Investitor</p>
+          <div className="bp-table-wrapper">
+            <table className="bp-table">
+              <thead><tr><th>Scenariu</th><th>Valoare companie (An 3)</th><th>Stake angel (20%)</th><th>ROI</th></tr></thead>
+              <tbody>
+                <tr><td>Pesimist (0,5× revenue)</td><td>420.750 RON</td><td>84.150 RON (~16.830 EUR)</td><td className="negative">0.77× (pierdere parțială)</td></tr>
+                <tr><td>Realist (3× revenue An 3)</td><td>2.524.500 RON</td><td>504.900 RON (~100.980 EUR)</td><td className="positive"><strong>4.6× ROI în 3 ani (~67% IRR)</strong></td></tr>
+                <tr><td>Optimist (5× revenue An 3)</td><td>4.207.500 RON</td><td>841.500 RON (~168.300 EUR)</td><td className="positive"><strong>7.7× ROI (~99% IRR)</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="bp-section-subtitle">Termenii Propuși</p>
+          <div className="bp-grid-3">
+            <div className="bp-card"><h3>Instrument de Investiție</h3><p>SAFE (Simple Agreement for Future Equity) sau direct equity prin SRL. Fără dobândă, fără termen de rambursare. 1× liquidation preference non-participatorie.</p></div>
+            <div className="bp-card bp-card-teal"><h3>Drepturi Investitor</h3><p>Board observer seat (nu board seat). Pro-rata rights pentru runde viitoare. Tag-along și drag-along standard. Rapoarte trimestriale de KPI.</p></div>
+            <div className="bp-card"><h3>Condiții pentru Investiție</h3><p>LOI semnat cu UTCN. Prototip funcțional demonstrat live. Înregistrare SRL în 30 zile de la primire fonduri. Lansare pilot în 90 de zile.</p></div>
+          </div>
+          <p style={{ color: '#7A8A9A', fontSize: '13px', marginTop: '12px' }}>
+            ⚡ <strong style={{ color: '#F4F1EC' }}>De ce este atractiv pentru un angel din Cluj?</strong> Piața IT din Cluj (30.000+ angajați tech) este exact clientela B2B Movio. Un investitor din ecosistemul tech local are acces direct la rețeaua de potențiali clienți B2B și poate aduce mai mult decât bani: introductions, credibilitate, mentorat — aliniate cu succesul investiției.
+          </p>
         </section>
 
         {/* OPEX */}
@@ -364,7 +416,7 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <div className="bp-table-wrapper" style={{marginTop:'16px'}}>
+          <div className="bp-table-wrapper" style={{ marginTop: '16px' }}>
             <table className="bp-table">
               <thead><tr><th>Sursă venit</th><th>Calcul An 2</th><th>Total An 2</th></tr></thead>
               <tbody>
@@ -375,7 +427,7 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <div className="bp-table-wrapper" style={{marginTop:'16px'}}>
+          <div className="bp-table-wrapper" style={{ marginTop: '16px' }}>
             <table className="bp-table">
               <thead><tr><th>Sursă venit</th><th>Calcul An 3</th><th>Total An 3</th></tr></thead>
               <tbody>
@@ -418,7 +470,7 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <p style={{color:'#7A8A9A', fontSize:'13px', marginTop:'12px'}}>⚠️ Deficitul de cash din Anul 2 (~56.000 RON) se acoperă prin: <strong style={{color:'#F4F1EC'}}>finanțare seed mică (~15.000 EUR)</strong> sau scalare mai lentă la 80 biciclete în loc de 120, menținând cash flow-ul cumulativ pozitiv.</p>
+          <p style={{ color: '#7A8A9A', fontSize: '13px', marginTop: '12px' }}>⚠️ Deficitul de cash din Anul 2 (~56.000 RON) se acoperă prin: <strong style={{ color: '#F4F1EC' }}>finanțare seed mică (~15.000 EUR)</strong> sau scalare mai lentă la 80 biciclete în loc de 120, menținând cash flow-ul cumulativ pozitiv.</p>
         </section>
 
         {/* BREAKEVEN */}
@@ -457,7 +509,7 @@ function BusinessPlan() {
             <div className="bp-card bp-card-red">
               <h3>Pesimist (-30% adopție, 0 B2B An 1)</h3>
               <p>An 1: 250 abonați, 7.500 RON venituri vs. 43.260 RON OPEX → <strong>pierdere -35.760 RON</strong></p>
-              <p style={{marginTop:'8px'}}>An 2: 800 abonați, 24.000 RON venituri → pierdere continuă. <strong>Concluzie: fără B2B, modelul nu e viabil.</strong></p>
+              <p style={{ marginTop: '8px' }}>An 2: 800 abonați, 24.000 RON venituri → pierdere continuă. <strong>Concluzie: fără B2B, modelul nu e viabil.</strong></p>
             </div>
             <div className="bp-card">
               <h3>Realist (proiecțiile principale)</h3>
@@ -466,7 +518,7 @@ function BusinessPlan() {
             <div className="bp-card bp-card-teal">
               <h3>Optimist (+30% adopție, 2 B2B An 1)</h3>
               <p>An 1: 450 abonați, 73.000 RON venituri → <strong>+29.740 RON</strong></p>
-              <p style={{marginTop:'8px'}}>An 3: 4.500 abonați, 1.200.000 RON venituri. Payback luna 18, pregătire rundă Seed la 3 ani.</p>
+              <p style={{ marginTop: '8px' }}>An 3: 4.500 abonați, 1.200.000 RON venituri. Payback luna 18, pregătire rundă Seed la 3 ani.</p>
             </div>
           </div>
           <p className="bp-section-subtitle">Comparație cu Eșecul Cluj Bike</p>
@@ -489,7 +541,7 @@ function BusinessPlan() {
         {/* OPERATIONAL */}
         <section className="bp-section" id="operational">
           <h2 className="bp-section-title"><Settings size={20} /> Producție Hub-uri &amp; Pregătire Flotă</h2>
-          <p style={{color:'#7A8A9A', fontSize:'14px', marginBottom:'16px'}}>Structura pilot: <strong style={{color:'#F4F1EC'}}>4 stații × 6 hub-uri/stație = 24 hub-uri.</strong> Un hub găzduieşte 2 biciclete. Cele 32 de biciclete sunt distribuite între hub-uri (nu toate hub-urile sunt ocupate la capacitate maximă — flexibilitate de rebalansare).</p>
+          <p style={{ color: '#7A8A9A', fontSize: '14px', marginBottom: '16px' }}>Structura pilot: <strong style={{ color: '#F4F1EC' }}>4 stații × 6 hub-uri/stație = 24 hub-uri.</strong> Un hub găzduieşte 2 biciclete. Cele 32 de biciclete sunt distribuite între hub-uri (nu toate hub-urile sunt ocupate la capacitate maximă — flexibilitate de rebalansare).</p>
           <p className="bp-section-subtitle">Pașii Asamblării unui Hub Movio (~6 ore, echipă 2 persoane)</p>
           <div className="bp-steps">
             <div className="bp-step"><div className="bp-step-num">1</div><div className="bp-step-text"><strong>Tăiere & sudare structură metalică</strong> — 1,5 ore, la atelier UTCN sau partener local Cluj</div></div>
@@ -501,7 +553,7 @@ function BusinessPlan() {
             <div className="bp-step"><div className="bp-step-num">7</div><div className="bp-step-text"><strong>Test funcțional în atelier</strong> — 1 oră: secvența completă senzor → blocare → cod QR → deblocare</div></div>
             <div className="bp-step"><div className="bp-step-num">8</div><div className="bp-step-text"><strong>Instalare în campus</strong> — 1,5 ore: fixare pe sol prin bride sau greutăți de beton, calibrare poziție</div></div>
           </div>
-          <div className="bp-table-wrapper" style={{marginTop:'24px'}}>
+          <div className="bp-table-wrapper" style={{ marginTop: '24px' }}>
             <table className="bp-table">
               <thead><tr><th>Element</th><th>Cost (RON)</th></tr></thead>
               <tbody>
@@ -683,7 +735,7 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <p style={{color:'#7A8A9A', fontSize:'13px', marginTop:'12px'}}>Dacă pragurile de 12 luni sunt atinse + cel puțin 1 contract B2B semnat, echipa decide oficial scalarea. Dacă nu, există 2 opțiuni: <strong style={{color:'#F4F1EC'}}>Extindere mandat pilot</strong> cu încă 6 luni sau <strong style={{color:'#F4F1EC'}}>Pivot</strong> — ajustare model business pe baza datelor reale.</p>
+          <p style={{ color: '#7A8A9A', fontSize: '13px', marginTop: '12px' }}>Dacă pragurile de 12 luni sunt atinse + cel puțin 1 contract B2B semnat, echipa decide oficial scalarea. Dacă nu, există 2 opțiuni: <strong style={{ color: '#F4F1EC' }}>Extindere mandat pilot</strong> cu încă 6 luni sau <strong style={{ color: '#F4F1EC' }}>Pivot</strong> — ajustare model business pe baza datelor reale.</p>
         </section>
 
       </div>
