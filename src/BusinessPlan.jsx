@@ -59,7 +59,7 @@ function BusinessPlan() {
           <div className="bp-grid">
             <div className="bp-card bp-card-teal">
               <h3>Misiune</h3>
-              <p>Mobilitate accesibilă, fiabilă și verde pentru studenții români — începând cu cei <strong>22.000 de studenți ai UTCN</strong>. Sistemul combină hub-uri modulare proiectate intern, o aplicație PWA și o flotă de city-bike-uri standardizate.</p>
+              <p>Movio este proiectat ca <strong>infrastructură de mobilitate campus</strong>, nu doar un serviciu de bike-sharing. Sistemul este optimizat pentru navetismul zilnic previzibil între cămine, facultăți și locații cheie universitare — deservind cei <strong>22.000 de studenți ai UTCN</strong> prin hub-uri modulare proiectate intern, o aplicație PWA și o flotă de city-bike-uri standardizate.</p>
             </div>
             <div className="bp-card">
               <h3>Viziunea pe 5 Ani</h3>
@@ -89,6 +89,11 @@ function BusinessPlan() {
             <div className="bp-stat-card"><div className="bp-stat">24M RON</div><div className="bp-stat-label">TAM — 540.000 studenți în România (~30 RON/an + extras)</div></div>
             <div className="bp-stat-card"><div className="bp-stat">12M RON</div><div className="bp-stat-label">SAM — 280.000 studenți în Cluj, Iași, Timișoara, Brașov</div></div>
             <div className="bp-stat-card"><div className="bp-stat">600K RON</div><div className="bp-stat-label">SOM — 5.000–8.000 utilizatori activi Cluj, maturitate an 3–4</div></div>
+          </div>
+          <p className="bp-section-subtitle">De Ce Acum? (Why Now)</p>
+          <div className="bp-card bp-card-teal" style={{ marginBottom: '20px' }}>
+            <h3>Momentul Potrivit pentru Movio</h3>
+            <p>Congestionarea urbană în creștere, creșterea costurilor de transport și cererea ridicată pentru soluții de mobilitate flexibile creează o oportunitate puternică pentru sisteme de transport eficiente bazate pe campus. Eșecul sistemelor publice de bike-sharing (Cluj Bike) a demonstrat că piața există, dar modelul de operare trebuie reimaginat. Movio apare exact la momentul potrivit: <strong>tehnologie accesibilă, validare reală cu 130 respondenți și un vid de piață confirmat.</strong></p>
           </div>
           <p className="bp-section-subtitle">Tendințe de Piață</p>
           <div className="bp-grid">
@@ -250,10 +255,10 @@ function BusinessPlan() {
         <section className="bp-section" id="roadmap">
           <h2 className="bp-section-title"><Target size={20} /> Roadmap pe 36 Luni</h2>
           <div className="bp-timeline">
-            <div className="bp-tl-item"><div className="bp-tl-period">LUNILE 1–3 · Q3 2026</div><div className="bp-tl-title">Lansare Pilot UTCN</div><ul className="bp-tl-items"><li>Finalizare prototip hardware funcțional</li><li>Semnare LOI cu UTCN, înregistrare SRL</li><li>Achiziție 32 biciclete + asamblare 24 hub-uri în 4 stații</li><li>Lansare oficială în campus</li><li>Țintă: 200 abonamente plătite în primele 30 zile</li></ul></div>
+            <div className="bp-tl-item"><div className="bp-tl-period">LUNILE 1–3 · Q3 2026</div><div className="bp-tl-title">Lansare Pilot UTCN</div><ul className="bp-tl-items"><li>Finalizare prototip hardware funcțional</li><li>Semnare LOI cu UTCN, înregistrare SRL</li><li>Achiziție 32 biciclete + asamblare 24 hub-uri în 4 stații</li><li>Lansare oficială în campus</li><li>Țintă: 200 abonamente plătite în primele 30 zile</li><li><strong>Primul an de operare este dedicat validării și optimizării sistemului, nu expansiunii rapide.</strong></li></ul></div>
             <div className="bp-tl-item"><div className="bp-tl-period">LUNILE 4–6</div><div className="bp-tl-title">Stabilizare & Învățare</div><ul className="bp-tl-items"><li>Optimizare flux operațional pe baza datelor reale</li><li>Atingerea pragului de 350–400 abonați activi</li><li>Începutul outreach-ului B2B</li><li>Primul raport public de impact (km, CO₂)</li></ul></div>
             <div className="bp-tl-item"><div className="bp-tl-period">LUNILE 7–12</div><div className="bp-tl-title">Consolidare</div><ul className="bp-tl-items"><li>Semnarea primului contract B2B Employer Branding (luna 8–10)</li><li>500+ abonați activi</li><li>Pregătirea expansiunii la UBB</li><li>Decizie: organic growth vs. aplicație seed</li></ul></div>
-            <div className="bp-tl-item"><div className="bp-tl-period">ANUL 2 · 2027</div><div className="bp-tl-title">Expansiune Cluj</div><ul className="bp-tl-items"><li>Lansare în UBB, UMF, USAMV (16 hub-uri totale)</li><li>Flotă crescută la ~120 biciclete</li><li>3–4 contracte B2B active</li><li>Atingerea pragului de profitabilitate operațională</li></ul></div>
+            <div className="bp-tl-item"><div className="bp-tl-period">ANUL 2 · 2027</div><div className="bp-tl-title">Expansiune Cluj</div><ul className="bp-tl-items"><li><strong>Scalarea începe în al doilea an de operare, ghidată de date reale de utilizare colectate în faza pilot.</strong> Deciziile de expansiune se bazează pe densitatea cererii, performanța operațională și sustenabilitatea financiară.</li><li>Lansare în UBB, UMF, USAMV (16 hub-uri totale)</li><li>Flotă crescută la ~120 biciclete</li><li>3–4 contracte B2B active</li><li>Atingerea pragului de profitabilitate operațională</li></ul></div>
             <div className="bp-tl-item"><div className="bp-tl-period">ANUL 3 · 2028</div><div className="bp-tl-title">Consolidare Model</div><ul className="bp-tl-items"><li>2.500+ abonați activi în Cluj</li><li>4–6 contracte B2B active</li><li>Studiu de fezabilitate Iași sau Timișoara</li><li>Optimizare hardware versiunea 2.0 (hub 4 biciclete, PCB custom)</li></ul></div>
           </div>
         </section>
@@ -263,6 +268,20 @@ function BusinessPlan() {
         {/* CAPEX */}
         <section className="bp-section" id="capex">
           <h2 className="bp-section-title"><TrendingUp size={20} /> CAPEX: Investiția Inițială (4 stații × 6 hub-uri/stație = 24 hub-uri, 32 biciclete)</h2>
+          <div className="bp-grid-3" style={{ marginBottom: '20px' }}>
+            <div className="bp-card bp-card-teal">
+              <h3>Fleet acquisition</h3>
+              <p>Cost per bicicletă: <strong>1.600 RON</strong> · Număr biciclete: <strong>32 buc</strong><br/>Total flotă: 1.600 × 32 = <strong>51.200 RON</strong></p>
+            </div>
+            <div className="bp-card">
+              <h3>Hub hardware</h3>
+              <p>Cost componente electronice: <strong>100 RON/hub</strong> · Structură metalică: <strong>250 RON/hub</strong><br/>Total 24 hub-uri: ~<strong>8.400 RON</strong></p>
+            </div>
+            <div className="bp-card bp-card-teal">
+              <h3>Infrastructură instalare</h3>
+              <p>Cost instalare per locație: <strong>~200 RON</strong> · Mentenanță lunară: <strong>600 RON/lună</strong><br/>Rezervă 15%: <strong>11.358 RON</strong></p>
+            </div>
+          </div>
           <div className="bp-table-wrapper">
             <table className="bp-table">
               <thead><tr><th>Categorie</th><th>Cantitate</th><th>Preț unitar</th><th>Subtotal</th></tr></thead>
@@ -596,13 +615,13 @@ function BusinessPlan() {
               </tbody>
             </table>
           </div>
-          <p className="bp-section-subtitle">Procesul End-to-End pentru Utilizator</p>
+          <p className="bp-section-subtitle">Parcursul Utilizatorului (User Journey Simplificat)</p>
           <div className="bp-steps">
-            <div className="bp-step"><div className="bp-step-num">1</div><div className="bp-step-text">Utilizatorul vede <strong>hub Movio în campus</strong> și scanează QR cu telefonul</div></div>
-            <div className="bp-step"><div className="bp-step-num">2</div><div className="bp-step-text">Deschide <strong>app web Movio direct în browser</strong> (fără descărcare), crează cont în 30 secunde</div></div>
-            <div className="bp-step"><div className="bp-step-num">3</div><div className="bp-step-text">Plătește <strong>abonament 30 RON/an</strong> sau pay-per-use (5 RON/oră)</div></div>
-            <div className="bp-step"><div className="bp-step-num">4</div><div className="bp-step-text">Selectează bicicleta → app trimite <strong>comandă deblocare</strong> la hub via WiFi/4G → LED verde</div></div>
-            <div className="bp-step"><div className="bp-step-num">5</div><div className="bp-step-text">Returnează bicicleta la orice hub → hub detectează (limitator de cursă) → app afișează <strong>km, CO₂ economisit, puncte</strong></div></div>
+            <div className="bp-step"><div className="bp-step-num">1</div><div className="bp-step-text"><strong>Utilizatorul deschide aplicația</strong> — scanează QR-ul de pe hub cu telefonul, accesând Movio direct din browser, fără descărcare</div></div>
+            <div className="bp-step"><div className="bp-step-num">2</div><div className="bp-step-text"><strong>Utilizatorul localizează cel mai apropiat hub</strong> — harta din aplicație arată hub-urile disponibile și bicicletele libere în timp real</div></div>
+            <div className="bp-step"><div className="bp-step-num">3</div><div className="bp-step-text"><strong>Bicicleta este deblocată</strong> — aplicația trimite comanda de deblocare la hub via WiFi/4G; LED-ul devine verde, servo-ul eliberează bicicleta</div></div>
+            <div className="bp-step"><div className="bp-step-num">4</div><div className="bp-step-text"><strong>Utilizatorul pedalează spre destinație</strong> — cursa include 60 minute gratuite în cadrul abonamentului; tarifele de depășire se aplică după</div></div>
+            <div className="bp-step"><div className="bp-step-num">5</div><div className="bp-step-text"><strong>Bicicleta este returnată la orice hub</strong> — hub-ul detectează returnarea, aplicația afișează km parcurși, CO₂ economisit și puncte bonus</div></div>
           </div>
           <p className="bp-section-subtitle">Rebalancing Flotă (Problemă Clasică Bike-Sharing)</p>
           <div className="bp-grid-3">
@@ -694,16 +713,16 @@ function BusinessPlan() {
 
         {/* RISCURI */}
         <section className="bp-section" id="riscuri">
-          <h2 className="bp-section-title"><AlertCircle size={20} /> Riscuri Operaționale & Plan de Continuitate</h2>
+          <h2 className="bp-section-title"><AlertCircle size={20} /> Riscuri &amp; Mitigare</h2>
           <div className="bp-table-wrapper">
             <table className="bp-table">
               <thead><tr><th>Risc</th><th>Probabilitate</th><th>Impact</th><th>Plan de Mitigare</th></tr></thead>
               <tbody>
+                <tr><td><strong>Vandalism sau furt</strong></td><td>Scăzut-mediu</td><td>Mare</td><td>Mecanism fizic de blocare + puncte fixe de andocare + verificare utilizator prin metodă de plată + sistem de monitorizare și controale de mentenanță. GPS activat, raport poliție în {'<'}2h, deposit reținut, asigurare flotă 80 RON/bic./an</td></tr>
+                <tr><td><strong>Cerere mai mică decât estimată</strong></td><td>Mediu</td><td>Mare</td><td>Lansare pilot în mediu controlat (UTCN) cu scalare graduală bazată pe date de utilizare reale. Dacă adoptarea este sub 150 abonați la 6 luni, pilotul se extinde fără expansiune.</td></tr>
                 <tr><td>Bicicletă defectă în mijlocul cursei</td><td>Mediu</td><td>Mediu</td><td>Compensare automată în app (cursă gratuită + bonus); mentenanță reactivă în {'<'}24h</td></tr>
                 <tr><td>Hub defect (servo blocat)</td><td>Scăzut</td><td>Mediu</td><td>Stoc servo-uri rezervă; piesă înlocuită în {'<'}2h</td></tr>
-                <tr><td>Furt bicicletă</td><td>Scăzut-mediu</td><td>Mare</td><td>GPS activat, raport poliție în {'<'}2h, deposit reținut, asigurare acoperitoare</td></tr>
-                <tr><td>Vandalism hub</td><td>Scăzut</td><td>Mediu</td><td>Locație vizibilă (campus), camere pază UTCN, asigurare comercială</td></tr>
-                <tr><td>Vreme extremă (zăpadă, ploaie)</td><td>Sigur sezonier</td><td>Mic</td><td>Hub-uri cu acoperire parțială; comunicare proactivă în app</td></tr>
+                <tr><td>Vreme extremă (zăpadă, ploaie)</td><td>Sigur sezonier</td><td>Mic</td><td>Hub-uri cu acoperire parțială; comunicare proactivă în app; contract B2B anual acoperă lunile slabe de iarnă</td></tr>
                 <tr><td>Pană internet / WiFi campus</td><td>Scăzut</td><td>Mare</td><td>Backup 4G planificat în Anul 2; cod admin pentru unlock manual</td></tr>
                 <tr><td>Server down {'>'} 2h</td><td>Scăzut</td><td>Mare</td><td>SLA 99% uptime Vercel; notificare proactivă utilizatori; echipă pe teren</td></tr>
                 <tr><td>Aprobare lentă UTCN</td><td>Mediu</td><td>Mare</td><td>Plan B: parcaje private limitrofe campus cu permisiune scrisă</td></tr>
